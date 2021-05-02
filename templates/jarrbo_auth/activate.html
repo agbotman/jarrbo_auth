@@ -1,0 +1,12 @@
+{% extends "jarrbo_auth/base.html" %}
+{% load i18n %}
+{% block jarrbo_auth_content %}
+  <div class="card bg-light p-2 m-4">
+    <div class="card-title">
+      <p>{% trans "The activation key {{ activation_key }} is invalid and cannot be used to activate this account." %}</p>
+    </div>
+  </div>
+{% endblock %}
+
+
+

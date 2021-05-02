@@ -1,0 +1,18 @@
+{% extends "jarrbo_auth/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block jarrbo_auth_content %}
+  <div class="card bg-light p-2 m-4">
+    {% trans 'You are signed in with account ' %} {{ user.email }}
+	<div class="card-body">
+		<a href="{% url 'jarrbo_auth:logout' %}" class="btn btn-primary" role="button">{% trans 'Logout' %}</a>
+	</div>
+  </div>
+  <div class="card bg-light p-2 m-4">
+    {% trans 'You can change your password using the button below.' %}
+    <div class="card-body">
+		<a href="{% url 'jarrbo_auth:password_change' %}" class="btn btn-primary" role="button">{% trans 'Change password' %}</a>
+	</div>
+  </div>
+{% endblock %}

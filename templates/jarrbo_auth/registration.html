@@ -1,0 +1,14 @@
+{% extends "jarrbo_auth/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block jarrbo_auth_content %}
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3>{% block title %}{% trans 'Jarrbo registration' %}{% endblock %}</h3>
+  </div>
+  <div class="panel-body">
+  {% crispy form %}
+  </div>
+</div>
+{% endblock %}

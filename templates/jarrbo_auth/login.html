@@ -1,0 +1,26 @@
+{% extends "jarrbo_auth/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block jarrbo_auth_content %}
+  <div class="card bg-light p-2 m-4">
+    <div class="card-title">
+      <h3>{% block title %}{% trans 'Jarrbo login' %}{% endblock %}</h3>
+    </div>
+    <div class="card-body">
+    {% crispy form %}
+    </div>
+  </div>
+  <div class="card bg-light p-2 m-4">
+    {% trans 'Forgotten your password? Enter your email address below, and we&#39ll email instructions for setting a new one' %}
+	<div class="card-body">
+		<a href="{% url 'jarrbo_auth:password_reset' %}" class="btn btn-primary" role="button">{% trans 'Reset my password' %}</a>
+	</div>
+  </div>
+  <div class="card bg-light p-2 m-4">
+    {% trans 'You don&#39t have an account? You can create an account using the button below.' %}
+    <div class="card-body">
+		<a href="{% url 'jarrbo_auth:register' %}" class="btn btn-primary" role="button">{% trans 'Create account' %}</a>
+	</div>
+  </div>
+{% endblock %}

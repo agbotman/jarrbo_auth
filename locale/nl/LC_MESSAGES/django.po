@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-06 17:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: forms.py:16 templates/login.html:17
+msgid "Create account"
+msgstr "Account aanmaken"
+
+#: forms.py:23
+msgid "Reset password"
+msgstr "Wachtwoord resetten"
+
+#: forms.py:36 templates/password_reset_confirm.html:6
+msgid "Change password"
+msgstr "Wachtwoord wijzigen"
+
+#: forms.py:43
+msgid "Login"
+msgstr "Inloggen"
+
+#: models.py:44
+msgid "first name"
+msgstr "voornaam"
+
+#: models.py:45
+msgid "last name"
+msgstr "achternaam"
+
+#: models.py:47
+msgid "staff status"
+msgstr "medewerker status"
+
+#: models.py:49
+msgid "Designates whether the user can log into this site."
+msgstr "Bepaalt of deze gebruiker kan inloggen op deze site."
+
+#: models.py:52
+msgid "active"
+msgstr "actief"
+
+#: models.py:55
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+"Bepaalt of deze gebruiker actief is. Deselecteer dit"
+"in plaats van het verwijderen van accounts."
+
+#: models.py:59
+msgid "date joined"
+msgstr "aanmelddatum"
+
+#: templates/activate.html:5
+msgid ""
+"The activation key {{ activation_key }} is invalid and cannot be used to "
+"activate this account."
+msgstr ""
+"De activatie sleutel {{ activation_key }} is ongeldig en kan niet gebruikt "
+"worden om dit account te activeren."
+
+#: templates/activation_complete.html:5
+msgid "Your account is activated now!"
+msgstr "Uw account is geactiveerd!"
+
+#: templates/activation_email.txt:2
+#, python-format
+msgid ""
+"\n"
+"Hello,\n"
+"\n"
+"Someone, hopefully you, signed up for a new account at %(site)s using this "
+"email address. If it was you, and you'd like to activate and use your "
+"account, click the link below or copy and paste it into your web browser's "
+"address bar:\n"
+msgstr ""
+"\n"
+"Goedendag,\n"
+"\n"
+"Iemand heeft een account aangemaakt voor deze %(site)s met dit "
+"email adres. Als u dit was dan kunt u uw account activeren door op onderstaande "
+"link te klikken. U kunt ook de link kopieren en in de adres bar van uw webbrowser "
+"plakken:\n"
+
+#: templates/activation_email.txt:10
+#, python-format
+msgid ""
+"\n"
+"If you didn't request this, you don't need to do anything; you won't receive "
+"any more email from us, and the account will expire automatically in "
+"%(expiration_days)s days.\n"
+msgstr ""
+"\n"
+"Als u geen nieuw account heeft aangemaakt dan hoeft u niets te doen. U krijgt geen "
+"email meer van ons en het account wordt automatisch verwijderd in "
+"%(expiration_days)s dagen.\n"
+
+#: templates/activation_email_subject.txt:2
+#, python-format
+msgid ""
+"\n"
+"Activate your %(site)s account - you have %(expiration_days)s days!\n"
+msgstr ""
+"\n"
+"Activeer uw %(site)s account - u heeft %(expiration_days)s dagen!\n"
+
+#: templates/login.html:8
+msgid "Jarrbo login"
+msgstr "Jarrbo login"
+
+#: templates/login.html:15
+msgid ""
+"You don&#39t have an account? You can create an account using the button "
+"below."
+msgstr ""
+"Heeft u geen account? U kunt er één aanmaken met onderstaande button."
+
+#: templates/login.html:21
+msgid ""
+"Forgotten your password? Enter your email address below, and we&#39ll email "
+"instructions for setting a new one"
+msgstr ""
+"Wachtwoord vergeten? Vul uw email adres hieronder in en we mailen u instructies "
+"om een nieuw wachtwoord aan te maken."
+
+#: templates/login.html:23 templates/password_reset_form.html:5
+#: templates/password_reset_form.html:16
+msgid "Reset my password"
+msgstr "Wachtwoord resetten"
+
+#: templates/logout.html:5
+msgid "You've been logged out."
+msgstr "U bent uitgelogd"
+
+#: templates/logout.html:6
+msgid "Login again."
+msgstr "Opnieuw inloggen"
+
+#: templates/password_change_done.html:6
+msgid "Your password was changed."
+msgstr "Uw wachtwoord is gewijzigd"
+
+#: templates/password_change_form.html:8
+msgid "Change Password"
+msgstr "Wachtwoord wijzigen"
+
+#: templates/password_reset_complete.html:7
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Uw wachtwoord is ingesteld. U kunt nu inloggen."
+
+#: templates/password_reset_complete.html:10
+msgid "Log in"
+msgstr "Inloggen"
+
+#: templates/password_reset_confirm.html:8
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr "Voer uw wachtwoord tweemaal in."
+
+#: templates/password_reset_confirm.html:16
+msgid "Change my password"
+msgstr "Wijzig mijn wachtwoord"
+
+#: templates/password_reset_confirm.html:25
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"Deze wachtwoord reset link is niet geldig, waarschijnlijk omdat hij al "
+"gebruikt is. Probeert u nogmaals een wachtwoord reset."
+
+#: templates/password_reset_done.html:8
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+"Wij hebben u instructies gestuurd om uw wachtwoord in te stellen indien dit "
+"account bestaat."
+
+#: templates/password_reset_done.html:10
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"Als u geen email ontvangt controleer dan uw spam folder."
+
+#: templates/password_reset_email.txt:3
+msgid "Dear user,"
+msgstr "Beste gebruiker,"
+
+#: templates/password_reset_email.txt:5
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"U ontvangt deze mail omdat u een wachtwoord reset heeft aangevraagd voor uw account "
+"bij %(site_name)s."
+
+#: templates/password_reset_email.txt:7
+msgid "Please go to the following page and choose a new password:"
+msgstr "Ga naar de volgende link en kies een nieuw wachtwoord:"
+
+#: templates/password_reset_email.txt:12
+msgid "Thanks for using our site!"
+msgstr "Bedankt voor het gebruiken van onze site!"
+
+#: templates/password_reset_email.txt:14
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "%(site_name)s team"
+
+#: templates/password_reset_form.html:7
+msgid "Forgotten your password?"
+msgstr "Wachtwoord vergeten?"
+
+#: templates/password_reset_form.html:7
+msgid ""
+"Enter your email address below, and we'll email instructions for setting a "
+"new one."
+msgstr "" 
+"Vul uw email adres hieronder in en wij sturen u instructies om een "
+"nieuwe in te voeren"
+
+#: templates/password_reset_subject.txt:2
+#, python-format
+msgid "Password reset on %(site_name)s"
+msgstr "Wachtwoord reset voor %(site_name)s"
+
+#: templates/registration.html:8
+msgid "Jarrbo registration"
+msgstr "Jarrbo registratie"
+
+#: templates/registration_complete.html:4
+msgid "Registration completed"
+msgstr "Registratie voltooid"
+
+#: templates/registration_complete.html:6
+msgid ""
+"An activation link has been sent to the email address you supplied, along "
+"with instructions for activating your account."
+msgstr ""
+"Een activatie link met instructies om uw account te activeren is "
+"gestuurd naar het email adres dat u heeft opgegeven."

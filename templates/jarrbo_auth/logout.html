@@ -1,0 +1,10 @@
+{% extends "jarrbo_auth/base.html" %}
+{% load i18n %}
+{% block jarrbo_auth_content %}
+  <div class="card bg-light p-2 m-4">
+    {% trans "You've been logged out." %}
+    <div class="card-body">
+		<a href="{% url 'jarrbo_auth:login' %}" class="btn btn-primary" role="button">{% trans 'Login again' %}</a>
+	</div>
+  </div>
+{% endblock %}
