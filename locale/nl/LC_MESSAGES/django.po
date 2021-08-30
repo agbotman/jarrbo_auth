@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-06 17:23+0200\n"
+"POT-Creation-Date: 2021-08-24 17:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,243 +18,234 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: forms.py:16 templates/login.html:17
+#: forms.py:26 templates/jarrbo_auth/login.html:23
 msgid "Create account"
 msgstr "Account aanmaken"
 
-#: forms.py:23
+#: forms.py:33 forms.py:40
 msgid "Reset password"
 msgstr "Wachtwoord resetten"
 
-#: forms.py:36 templates/password_reset_confirm.html:6
+#: forms.py:47 templates/jarrbo_auth/profile.html:15
 msgid "Change password"
 msgstr "Wachtwoord wijzigen"
 
-#: forms.py:43
+#: forms.py:54
 msgid "Login"
-msgstr "Inloggen"
-
-#: models.py:44
-msgid "first name"
-msgstr "voornaam"
+msgstr "Aanmelden"
 
 #: models.py:45
+msgid "first name"
+msgstr "Voornaam"
+
+#: models.py:46
 msgid "last name"
-msgstr "achternaam"
+msgstr "Achternaam"
 
-#: models.py:47
+#: models.py:48
 msgid "staff status"
-msgstr "medewerker status"
+msgstr "Staf"
 
-#: models.py:49
+#: models.py:50
 msgid "Designates whether the user can log into this site."
-msgstr "Bepaalt of deze gebruiker kan inloggen op deze site."
+msgstr "Geeft aan of de gebruiker mag aanmelden bij deze site."
 
-#: models.py:52
+#: models.py:53
 msgid "active"
-msgstr "actief"
+msgstr "Actief"
 
-#: models.py:55
+#: models.py:56
 msgid ""
 "Designates whether this user should be treated as active. Unselect this "
 "instead of deleting accounts."
 msgstr ""
-"Bepaalt of deze gebruiker actief is. Deselecteer dit"
-"in plaats van het verwijderen van accounts."
+"Geeft aan of deze gebruiker een actieve gebruiker is. Deselecteer dit in "
+"plaats van het verwijderen van accounts."
 
-#: models.py:59
+#: models.py:60
 msgid "date joined"
-msgstr "aanmelddatum"
+msgstr "Aanmeldingsdatum"
 
-#: templates/activate.html:5
+#: templates/jarrbo_auth/activate.html:6
 msgid ""
 "The activation key {{ activation_key }} is invalid and cannot be used to "
 "activate this account."
 msgstr ""
-"De activatie sleutel {{ activation_key }} is ongeldig en kan niet gebruikt "
-"worden om dit account te activeren."
+"De activatiesleutel {{ activation_key }} is niet geldig en kan niet gebruikt"
+" worden om dit account aan te melden."
 
-#: templates/activation_complete.html:5
+#: templates/jarrbo_auth/activation_complete.html:6
 msgid "Your account is activated now!"
 msgstr "Uw account is geactiveerd!"
 
-#: templates/activation_email.txt:2
+#: templates/jarrbo_auth/activation_email.txt:2
 #, python-format
 msgid ""
 "\n"
 "Hello,\n"
 "\n"
-"Someone, hopefully you, signed up for a new account at %(site)s using this "
-"email address. If it was you, and you'd like to activate and use your "
-"account, click the link below or copy and paste it into your web browser's "
-"address bar:\n"
+"Someone, hopefully you, signed up for a new account at %(site)s using this email address. If it was you, and you'd like to activate and use your account, click the link below or copy and paste it into your web browser's address bar:\n"
 msgstr ""
 "\n"
 "Goedendag,\n"
 "\n"
-"Iemand heeft een account aangemaakt voor deze %(site)s met dit "
-"email adres. Als u dit was dan kunt u uw account activeren door op onderstaande "
-"link te klikken. U kunt ook de link kopieren en in de adres bar van uw webbrowser "
-"plakken:\n"
+"Iemand, hopelijk was het u, heeft een nieuw account aangemeld bij %(site)s met dit e-mailadres. Als u zich inderdaad heeft aangemeld, gebruik dan onderstaande link om het account te activeren (of kopieer en plak de link in de adresbalk van uw browser.\n"
 
-#: templates/activation_email.txt:10
+#: templates/jarrbo_auth/activation_email.txt:10
 #, python-format
 msgid ""
 "\n"
-"If you didn't request this, you don't need to do anything; you won't receive "
-"any more email from us, and the account will expire automatically in "
-"%(expiration_days)s days.\n"
+"If you didn't request this, you don't need to do anything; you won't receive any more email from us, and the account will expire automatically in %(expiration_days)s days.\n"
 msgstr ""
 "\n"
-"Als u geen nieuw account heeft aangemaakt dan hoeft u niets te doen. U krijgt geen "
-"email meer van ons en het account wordt automatisch verwijderd in "
-"%(expiration_days)s dagen.\n"
+"Als u het niet was, dan hoeft u niets te doen. U ontvangt geen e-mails meer van ons en het account zal automatisch worden verwijderd in %(expiration_days)s dagen.  \n"
 
-#: templates/activation_email_subject.txt:2
+#: templates/jarrbo_auth/activation_email_subject.txt:2
 #, python-format
 msgid ""
 "\n"
 "Activate your %(site)s account - you have %(expiration_days)s days!\n"
 msgstr ""
 "\n"
-"Activeer uw %(site)s account - u heeft %(expiration_days)s dagen!\n"
+"Activeer uw account bij  %(site)s - u heeft %(expiration_days)s dagen!\n"
 
-#: templates/login.html:8
+#: templates/jarrbo_auth/login.html:8
 msgid "Jarrbo login"
-msgstr "Jarrbo login"
+msgstr "Aanmelden bij Jarrbo"
 
-#: templates/login.html:15
-msgid ""
-"You don&#39t have an account? You can create an account using the button "
-"below."
-msgstr ""
-"Heeft u geen account? U kunt er één aanmaken met onderstaande button."
-
-#: templates/login.html:21
+#: templates/jarrbo_auth/login.html:15
 msgid ""
 "Forgotten your password? Enter your email address below, and we&#39ll email "
 "instructions for setting a new one"
 msgstr ""
-"Wachtwoord vergeten? Vul uw email adres hieronder in en we mailen u instructies "
-"om een nieuw wachtwoord aan te maken."
+"Bent u uw wachtwoord vergeten? Vul uw e-mail adres hieronder in en wij "
+"sturen u instructies om een nieuwe te kiezen."
 
-#: templates/login.html:23 templates/password_reset_form.html:5
-#: templates/password_reset_form.html:16
+#: templates/jarrbo_auth/login.html:17
+#: templates/jarrbo_auth/password_reset_form.html:8
 msgid "Reset my password"
-msgstr "Wachtwoord resetten"
+msgstr "Reset mijn wachtwoord"
 
-#: templates/logout.html:5
+#: templates/jarrbo_auth/login.html:21
+msgid ""
+"You don&#39t have an account? You can create an account using the button "
+"below."
+msgstr ""
+"U heeft geen account? U kunt een account aanmaken met onderstaande button."
+
+#: templates/jarrbo_auth/logout.html:5
 msgid "You've been logged out."
-msgstr "U bent uitgelogd"
+msgstr "U bent afgemeld."
 
-#: templates/logout.html:6
-msgid "Login again."
-msgstr "Opnieuw inloggen"
+#: templates/jarrbo_auth/logout.html:7
+msgid "Login again"
+msgstr "Opnieuw aanmelden"
 
-#: templates/password_change_done.html:6
+#: templates/jarrbo_auth/password_change_done.html:7
 msgid "Your password was changed."
-msgstr "Uw wachtwoord is gewijzigd"
+msgstr "Uw wachtwoord is gewijzigd."
 
-#: templates/password_change_form.html:8
+#: templates/jarrbo_auth/password_change_form.html:8
+#: templates/jarrbo_auth/password_reset_confirm.html:9
 msgid "Change Password"
 msgstr "Wachtwoord wijzigen"
 
-#: templates/password_reset_complete.html:7
+#: templates/jarrbo_auth/password_reset_complete.html:6
 msgid "Your password has been set.  You may go ahead and log in now."
 msgstr "Uw wachtwoord is ingesteld. U kunt nu inloggen."
 
-#: templates/password_reset_complete.html:10
+#: templates/jarrbo_auth/password_reset_complete.html:8
 msgid "Log in"
-msgstr "Inloggen"
+msgstr "Aanmelden"
 
-#: templates/password_reset_confirm.html:8
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
-msgstr "Voer uw wachtwoord tweemaal in."
-
-#: templates/password_reset_confirm.html:16
-msgid "Change my password"
-msgstr "Wijzig mijn wachtwoord"
-
-#: templates/password_reset_confirm.html:25
+#: templates/jarrbo_auth/password_reset_confirm.html:20
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
-"Deze wachtwoord reset link is niet geldig, waarschijnlijk omdat hij al "
-"gebruikt is. Probeert u nogmaals een wachtwoord reset."
+"De wachtwoord link is ongeldig, waarschijnlijk omdat hij al is gebruikt. U "
+"dient opnieuw een wachtwoord reset aanvragen."
 
-#: templates/password_reset_done.html:8
+#: templates/jarrbo_auth/password_reset_done.html:7
 msgid ""
 "We've emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
 msgstr ""
-"Wij hebben u instructies gestuurd om uw wachtwoord in te stellen indien dit "
-"account bestaat."
+"Indien er account bestaat dat bij het e-mailadres hoort dat u heeft "
+"ingevuld, dan hebben wij u per e-mail instructies gestuurd om uw wachtwoord "
+"in te stellen"
 
-#: templates/password_reset_done.html:10
+#: templates/jarrbo_auth/password_reset_done.html:8
 msgid ""
 "If you don't receive an email, please make sure you've entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
-"Als u geen email ontvangt controleer dan uw spam folder."
+"Indien u geen e-mail ontvangt, controleer dan of u het juiste e-mailadres "
+"heeft ingevoerd of controleer uw spam folder."
 
-#: templates/password_reset_email.txt:3
+#: templates/jarrbo_auth/password_reset_email.txt:3
 msgid "Dear user,"
-msgstr "Beste gebruiker,"
+msgstr "Geachte gebruiker,"
 
-#: templates/password_reset_email.txt:5
+#: templates/jarrbo_auth/password_reset_email.txt:5
 #, python-format
 msgid ""
 "You're receiving this email because you requested a password reset for your "
 "user account at %(site_name)s."
 msgstr ""
-"U ontvangt deze mail omdat u een wachtwoord reset heeft aangevraagd voor uw account "
-"bij %(site_name)s."
+"U ontvangt deze e-mail omdat u een wachtwoord reset heeft aangevraagd voor "
+"uw account bij %(site_name)s."
 
-#: templates/password_reset_email.txt:7
+#: templates/jarrbo_auth/password_reset_email.txt:7
 msgid "Please go to the following page and choose a new password:"
-msgstr "Ga naar de volgende link en kies een nieuw wachtwoord:"
+msgstr "Ga naar de volgende pagina en kies een nieuw wachtwoord:"
 
-#: templates/password_reset_email.txt:12
+#: templates/jarrbo_auth/password_reset_email.txt:12
 msgid "Thanks for using our site!"
 msgstr "Bedankt voor het gebruiken van onze site!"
 
-#: templates/password_reset_email.txt:14
+#: templates/jarrbo_auth/password_reset_email.txt:14
 #, python-format
 msgid "The %(site_name)s team"
-msgstr "%(site_name)s team"
+msgstr "Het team van %(site_name)s"
 
-#: templates/password_reset_form.html:7
-msgid "Forgotten your password?"
-msgstr "Wachtwoord vergeten?"
-
-#: templates/password_reset_form.html:7
+#: templates/jarrbo_auth/password_reset_form.html:9
 msgid ""
 "Enter your email address below, and we'll email instructions for setting a "
 "new one."
-msgstr "" 
-"Vul uw email adres hieronder in en wij sturen u instructies om een "
-"nieuwe in te voeren"
+msgstr ""
+"Vul uw e-mail adres hieronder in en we sturen u een e-mail met instructies "
+"om een nieuwe in te stellen."
 
-#: templates/password_reset_subject.txt:2
+#: templates/jarrbo_auth/password_reset_subject.txt:2
 #, python-format
 msgid "Password reset on %(site_name)s"
 msgstr "Wachtwoord reset voor %(site_name)s"
 
-#: templates/registration.html:8
-msgid "Jarrbo registration"
-msgstr "Jarrbo registratie"
+#: templates/jarrbo_auth/profile.html:7
+msgid "You are signed in with account "
+msgstr "U bent aangemeld met account"
 
-#: templates/registration_complete.html:4
+#: templates/jarrbo_auth/profile.html:9
+msgid "Logout"
+msgstr "Afmelden"
+
+#: templates/jarrbo_auth/profile.html:13
+msgid "You can change your password using the button below."
+msgstr "U kunt uw wachtwoord wijzigen met onderstaande button."
+
+#: templates/jarrbo_auth/registration.html:8
+msgid "Jarrbo registration"
+msgstr "Registratie bij Jarrbo"
+
+#: templates/jarrbo_auth/registration_complete.html:4
 msgid "Registration completed"
 msgstr "Registratie voltooid"
 
-#: templates/registration_complete.html:6
+#: templates/jarrbo_auth/registration_complete.html:6
 msgid ""
 "An activation link has been sent to the email address you supplied, along "
 "with instructions for activating your account."
 msgstr ""
-"Een activatie link met instructies om uw account te activeren is "
-"gestuurd naar het email adres dat u heeft opgegeven."
+"Er is een activatie link gestuurd naar het e-mailadres dat u heeft "
+"opgegeven, met instructies om het account te activeren."
