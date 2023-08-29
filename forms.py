@@ -1,4 +1,4 @@
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from django_registration.forms import RegistrationForm
 from jarrbo_theme.forms import JarrboFormHelper
 from django.contrib.auth.forms import PasswordResetForm, SetPasswordForm, PasswordChangeForm, AuthenticationForm
